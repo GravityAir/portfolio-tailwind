@@ -1,301 +1,202 @@
-<html>
+<html class="dark" lang="id">
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Web portofolio tailwind">
-    <meta name="keyword" content="tailwindcss, CSS, tailwind">
-    <meta name="author" content="codepolitan">
-    <title>Web Portofolio</title>
+    <meta name="description" content="Web portofolio Celvin">
+    <meta name_alias="keyword" content="tailwindcss, CSS, tailwind, portfolio">
+    <meta name="author" content="Celvin">
+    <title>Portofolio | Celvin</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="output.css">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
     <style>
-        .gradient
-        {
-            background-image: linear-gradient(to bottom right,#4C51BF,#702459);
-        }
-        .gradient-skill
-        {
-            background-image: linear-gradient(#FC8181,#FED7D7);
-        }
-        .gradient-bottom
-        {
-            background-image: linear-gradient(#4C51BF,#702459);
-        }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
-  <body>
-    <!--section navbar-->
-    <section class="w-screen mx-auto px-4">
-        <nav class="flex flex-wrap p-6 justify-between">
-			<!-- Logo -->
-            <div class="flex flex-shrink-0 mr-6"> 
-                <img src="img/logo.png" class="h-10 w-50 mr-2">
-            </div>
-			
-			<!-- Menu -->
-            <div class="block lg:hidden">
-                <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                </a>
-            </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
-                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        About me
-                    </a>
-                    <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Skill Framework
-                    </a>
-                    <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Recent Work
-                    </a>
-                
-                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Contact me
-                    </a>
-                </div>
-                <div>
-                    <a href="#contact" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transpaent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
-                        Contact me
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </section>
-	<!-- end navbar -->
-	
-    <!-- section about -->
-    <section id="about" class="w-screen mx-auto py-4 gradient">
-		<!-- sambutan -->
-        <div class="px-16 py-8 text-center text-white">
-            <h1 class="w-full text-5xl font-bold ">About me</h1>
-            <div class="mb-4">
-                <div class="bg-pink-500 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
-            </div>
-            <h2 class="text-3xl font-bold mb-2 ">
-                Hai, Saya Naufal. Senang berjumpa dengan Anda.
-            </h2>
-            <h3 class="text-lg mb-2">
-                Saya seorang programmer dan juga analis, selain dapat membuat aplikasi menggunakan bahasa pemrograman, Saya juga bisa merancang suatu
-                sistem yang dibutuhkan user.
-            </h3>
-            <div class="w-full">
-                <div class="px-4 py-4 ">
-					<!-- source image baby.jpg didownload dari situs unsplash.com, koleksi Troy T - @ttcollect -->
-                    <img src="img/baby.jpg" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48"> 
-                </div>
-            </div>
+
+  <body class="font-sans bg-slate-900 text-slate-300">
+    <header class="bg-slate-900/75 backdrop-blur-lg sticky top-0 z-50 shadow-md ">
+      <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="text-2xl font-bold text-cyan-500">
+          <a href="#home">Celvin</a>
         </div>
-		<!-- box portofolio -->
-        <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
-			<!-- box pertama -->
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-                <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
-                <div class="p-4 ">
-                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
-                    <p class="text-gray-600 text-base mb-2">PHP</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">.NET</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">C++</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Java</p>
-                    <hr class="text-gray-600 mb-2">    
-                </div>
-                <div class="px-2 py-4">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
-                </div>
+        
+        <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 rounded text-slate-300 border border-slate-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+        </div>
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto">
+          <div class="text-lg">
+            <a href="#home" class="block lg:inline-block mt-4 lg:mt-0 text-slate-300 hover:text-cyan-500 transition-colors duration-200 mr-6">
+                Home
+            </a>
+            <a href="#about" class="block lg:inline-block mt-4 lg:mt-0 text-slate-300 hover:text-cyan-500 transition-colors duration-200 mr-6">
+                About
+            </a>
+            <a href="#skill" class="block lg:inline-block mt-4 lg:mt-0 text-slate-300 hover:text-cyan-500 transition-colors duration-200 mr-6">
+                Skills
+            </a>
+            <a href="#portfolio" class="block lg:inline-block mt-4 lg:mt-0 text-slate-300 hover:text-cyan-500 transition-colors duration-200 mr-6">
+                Portfolio
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+	<section id="home" class="h-screen flex items-center justify-center text-center bg-slate-900">
+      <div class="container mx-auto px-6">
+        <p class="text-xl md:text-2xl text-cyan-500 mb-3">Hello, I'm</p>
+        <h1 class="text-5xl md:text-7xl font-bold text-slate-100 mb-5">Celvin</h1>
+        <h2 class="text-2xl md:text-3xl text-slate-400 mb-8">FullStack Developer</h2>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          5th Semester Information System Student at Tarumanagara University 
+        </p>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          Web Developer, Data & AI Enthuasiast
+        </p>
+        
+        <div class="flex justify-center space-x-6">
+           <a href="https://www.instagram.com/celvnns/" class="text-slate-400 hover:text-cyan-500 transition-colors duration-200 mx-4">
+              <i class="fa-2x fab fa-instagram"></i>
+           </a>
+           <a href="https://www.linkedin.com/in/celvin-celvin-929504238/" class="text-slate-400 hover:text-cyan-500 transition-colors duration-200 mx-4">
+              <i class="fa-2x fab fa-linkedin"></i>
+           </a>
+           <a href="https://github.com/GravityAir" class="text-slate-400 hover:text-cyan-500 transition-colors duration-200 mx-4">
+             <i class="fa-2x fab fa-github"></i>
+           </a>
+           </div>
+      </div>
+    </section>
+
+	<section id="about" class="py-24 bg-slate-900">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img src="img/diri.jpg" class="shadow-lg rounded-lg w-full max-w-md mx-auto"> 
+          </div>
+          <div>
+            <h2 class="text-4xl font-bold text-center text-slate-100 mb-12">About Me</h2>
+            <p class="text-lg text-slate-400 leading-relaxed mb-6">
+                Highly motivated Information Systems student with a strong current GPA of 3.84/4.00 and a clear focus
+                on Web Development. Proficient in HTML, CSS, Javascript, PHP, Laravel, coupled with strong problem
+                solving and excellent communication skills. Proven through experience in rapid prototyping during a
+                hackathon and leadership in student organization management. Seeking an internship or entry level role
+                to build efficient and user-friendly web solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="py-24 bg-slate-800"> <div class="container mx-auto px-6">
+        <div class="mb-16">
+          <h3 class="text-3xl font-semibold text-slate-100 flex items-center mb-8">
+            <i class="fas fa-graduation-cap text-cyan-500 mr-4"></i>
+            Education
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-slate-900 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 shadow-lg">
+              <p class="text-cyan-500 text-sm font-medium">2023 - 2027</p>
+              <h4 class="text-xl font-semibold text-slate-100 mt-2">University of Tarumangara</h4>
+              <p class="text-slate-400 mt-1">Bachelor of Information System</p>
+              <p class="text-slate-400 mt-1">Current GPA 3.84/4.00</p>
             </div>
-			
-			<!-- box kedua -->
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-                <i class="fas fa-pencil-ruler text-red-500 fa-5x mb-6"></i>
-                <div class="p-4 ">
-                    <p class="font-bold text-lg md:text-xl mb-6">Design</p>
-                    <p class="text-gray-600 text-base mb-2">CSS</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Logo</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Mobile</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">UI</p>
-                    <hr class="text-gray-600 mb-2">    
-                </div>
-                <div class="px-2 py-4">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
-                </div>
+            <div class="bg-slate-900 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 shadow-lg">
+              <p class="text-cyan-500 text-sm font-medium">2019 - 2022</p>
+              <h4 class="text-xl font-semibold text-slate-100 mt-2">SMAN 2 Jakarta</h4>
+              <p class="text-slate-400 mt-1">Sociology</p>
+              <p class="text-slate-400 mt-1">Grade 84/100</p>
             </div>
-			
-			<!-- box ketiga -->
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-                <i class="fas fa-database text-green-500 fa-5x mb-6"></i>
-                <div class="p-4 ">
-                    <p class="font-bold text-lg md:text-xl mb-6">Database</p>
-                    <p class="text-gray-600 text-base mb-2">MySQL</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">SQL Server</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Oracle</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">PostgreSQL</p>
-                    <hr class="text-gray-600 mb-2">
-                </div>
-                <div class="px-2 py-4">
-                    <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
-                </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-semibold text-slate-100 flex items-center mb-8">
+            <i class="fas fa-award text-cyan-500 mr-4"></i>
+            Certification
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-slate-900 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 shadow-lg">
+              <h4 class="text-xl font-semibold text-slate-100 mt-2">Belajar Dasar Pemrograman Web (HTML5, CSS)</h4>
+              <p class="text-slate-400 mt-1">Dicoding Indonesia</p>
             </div>
+            <div class="bg-slate-900 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 shadow-lg">
+              <h4 class="text-xl font-semibold text-slate-100 mt-2">Belajar Dasar Pemrograman JavaScript</h4>
+              <p class="text-slate-400 mt-1">Dicoding Indonesia</p>
+            </div>
+            <div class="bg-slate-900 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 shadow-lg">
+              <h4 class="text-xl font-semibold text-slate-100 mt-2">Memulai Pemrograman dengan Python</h4>
+              <p class="text-slate-400 mt-1">Dicoding Indonesia</p>
+            </div>
+            <div class="bg-slate-900 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 shadow-lg">
+              <h4 class="text-xl font-semibold text-slate-100 mt-2">Laravel</h4>
+              <p class="text-slate-400 mt-1">CourseNet</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skill" class="py-24 bg-slate-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-slate-100 mb-12">My Skills</h2>
+        <div class="flex flex-wrap justify-center max-w-4xl mx-auto">
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">HTML</span>
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">CSS</span>
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">Javascript</span>
             
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">PHP</span>
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">Laravel</span>
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">MySQL</span>
+
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">Bootstrap</span>
+            <span class="bg-slate-700 text-slate-300 text-lg font-medium px-4 py-2 rounded-md m-2">TailwindCSS</span>
         </div>
+      </div>
     </section>
-	<!-- end about me -->
-	
-    <!-- section skill framework -->
-    <section id="skill" class="container mx-auto py-4 bg-white px-4">
-        <div class="flex flex-wrap">
-			<!-- box pertama menampilkan gambar -->
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
-				<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
-				<img src="img/img4.jpg" class="max-w-full rounded-lg shadow-lg">
+	<section id="portfolio" class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-slate-100">Portfolio</h1>
             </div>
-			
-			<!-- box kedua menampilkan skill framework -->
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-                <div class="md:pr-12">
-                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill Framework</h1>
-                    <div class="mb-4">
-                        <div class="h-1 mx-auto bg-pink-500  w-2/3  opacity-75 my-0 mx-0 rounded"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-slate-800 shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">                    <div class="p-6">
+                        <p class="font-bold text-2xl mb-3 text-slate-100">Aplikasi Web Perencanaan Liburan</p>
+                        <p class="text-slate-400 text-base mb-5">Technology: HTML | CSS | Bootstrap | PHP | CRUD (PhpMyAdmin)</p>
+                        <div class="flex space-x-4">
+                          <a href="https://github.com/GravityAir/Vacation.git" class="text-cyan-500 hover:text-cyan-600 font-medium text-lg"><i class="fab fa-github mr-2"></i>Code</a>
+                        </div>
                     </div>
-                    <p class="mt-4 text-lg text-gray-600">Berikut adalah item dan skala keahlian untuk framework :</p>
-                    <ul class="list-none mt-4">
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Codeigniter</p>
-                            <div class="gradient-skill w-7/8"></div>
-                        </li>
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Laravel</p>
-                            <div class="gradient-skill w-3/4"></div>
-                        </li>
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Bootstrap</p>
-                            <div class="gradient-skill w-2/3"></div>
-                        </li>
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Tailwindcss</p>
-                            <div class="gradient-skill w-1/2"></div>
-                        </li>
-                    </ul>
+                </div>
+                
+                <div class="bg-slate-800 shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">                    <div class="p-6">
+                        <p class="font-bold text-2xl mb-3 text-slate-100">Aplikasi Web Nonton Film</p>
+                        <p class="text-slate-400 text-base mb-5">Technology: HTML | CSS | Bootstrap | Laravel | DBeaver</p>
+                        <div class="flex space-x-4">
+                          <a href="https://github.com/GravityAir/Netflix.git" class="text-cyan-500 hover:text-cyan-600 font-medium text-lg"><i class="fab fa-github mr-2"></i>Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-	<!-- end skill framework -->
-	
-	<!-- section my recent work -->
-    <section id="recent" class="w-screen mx-auto py-8 bg-white">
-        <div class="text-center mb-8">
-            <h1 class="w-full my-2 text-5xl font-bold text-gray-700">My Recent Work</h1>
-            <div class="mb-4">
-                <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded"></div>
-            </div>
-            <p class="text-lg m-4 text-gray-600">Berikut adalah pekerjaan terbaru Saya : </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 m-8">
-            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
-				<!-- source img1.jpg didownload dari situs unsplash.com, koleksi Clément H - @clemhlrdt-->
-                <img src="img/img1.jpg" class="w-full rounded-lg">
-                <div class="px-2 py-2 text-center">
-                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Penelitian</p>
-                    <p class="text-gray-700 text-base">Sistem Informasi penelitian untuk dosen dan mahasiswa di Universitas XX</p>
-                </div>
-                <div class="px-2 py-4 text-center">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
-                </div>
-            </div>
-            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
-				<!-- source img2.jpg didownload dari situs unsplash.com, koleksi NordWood Themes - @nordwood -->
-                <img src="img/img2.jpg" class="w-full rounded-lg">
-                <div class="px-2 py-2 text-center">
-                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Perpustakaan</p>
-                    <p class="text-gray-700 text-base">Sistem Informasi Perpustakaan untuk Perpustakaan kota ABC</p>
-                </div>
-                <div class="px-2 py-4 text-center">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
-                </div>
-            </div>
-			<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
-            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
-                <img src="img/img4.jpg" class="w-full rounded-lg">
-                <div class="px-2 py-2 text-center">
-                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Keuangan</p>
-                    <p class="text-gray-700 text-base">Sistem Informasi Keuangan untuk perusahaan ABC</p>
-                </div>
-                <div class="px-2 py-4 text-center">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
-                </div>
-            </div>
-            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
-				<!-- source img1.jpg didownload dari situs unsplash.com, koleksi Clément H - - @clemhlrdt -->
-                <img src="img/img1.jpg" class="w-full rounded-lg">
-                <div class="px-2 py-2 text-center">
-                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Asset</p>
-                    <p class="text-gray-700 text-base">Sistem Informasi Asset untuk Laboratorium ABC</p>
-                </div>
-                <div class="px-2 py-4 text-center">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!-- end my recent work -->
-	
-	<!-- section contact -->
-    <section id="contact" class="w-screen mx-auto py-4 gradient-bottom">
-        <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Contact me</h1>
-        <div class="mb-4">
-            <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/6 opacity-75 my-0 py-0 rounded"></div>
-        </div>
-        <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-gray-200 mx-auto">
-			<form class="p-5 lg:p-10 text-center">
-				<h4 class="text-2xl font-semibold">Ingin menghubungi saya?</h4>
-				<p class="mt-1 mb-4 text-gray-600">Tolong kirimkan pesan.</p>
-				<div class="w-full mb-4 mt-8">
-					<label class="uppercase text-gray-600 text-xs font-bold">Nama lengkap</label>
-					<input type="text" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Nama Lengkap">
-				</div>
-
-				<div class="w-full mb-4 mt-4">
-					<label class="uppercase text-gray-600 text-xs font-bold">Email</label>
-					<input type="text" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Email">
-				</div>
-
-				<div class="w-full mb-4 mt-4">
-					<label class="uppercase text-gray-600 text-xs font-bold">Pesan</label>
-					<textarea rows="4" cols="80" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Tuliskan pesan ..."></textarea>
-				</div>
-				<div class="mt-6">
-					<button class="bg-indigo-700 text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:bg-indigo-900 hover:shadow-lg" type="button">Kirim pesan</button>
-				</div>
-			</form>
-        </div>
-    </section>
-	<!-- end section contact me -->
-	
-	<!-- section footer -->
-    <section class="w-screen mx-auto py-4 bg-white mt-8 mb-8">
-		  <div class="text-center">
-			 <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2 ">
-				<i class="fa-2x fab fa-facebook"></i>
-			 </a>
-			 <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2 ">
-				<i class="fa-2x fab fa-twitter"></i>
-			 </a>
-			 <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2 ">
-			   <i class="fa-2x fab fa-instagram"></i>
-			 </a>
+	<footer class="w-full mx-auto py-10 bg-slate-900 border-t border-slate-700 mt-12">
+		 <div class="text-center text-slate-400">
+		   © 2025 Celvin. All rights reserved.
 		 </div>
-		 <div class="text-center mt-4 text-gray-600">
-		   Design with Tailwindcss
-		 </div>
-    </section>
-	<!-- end footer -->
-  </body>
+    </footer>
+	</body>
 </html>
